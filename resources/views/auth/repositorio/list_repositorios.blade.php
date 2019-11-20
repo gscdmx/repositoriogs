@@ -87,8 +87,7 @@ if (isset(\Auth::user()->permisos)) {
               </a>
             </div>
           </div>
-
-          
+     
 
 
  @endforeach
@@ -96,17 +95,6 @@ if (isset(\Auth::user()->permisos)) {
   </div>
         
   <?php endif?>           
-
-
-
-
-
-
-
-
-
-
-
 
 
 

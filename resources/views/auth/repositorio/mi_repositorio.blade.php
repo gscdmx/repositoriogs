@@ -41,12 +41,21 @@
             <div class="card-header">
               <h4>Listado de archivos</h4>
             </div>
+
+            <div class="form-group row">
+            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#example">crear carpeta</a>
+          </div>
+
+
+
+
+
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-striped" id="archivoslist">
                   <thead>
                     <tr>
-                      <th>Descripcion</th>
+                      <th>Descripción</th>
                       <th>Opciones</th>
                      
                     </tr>
@@ -107,7 +116,7 @@
 
 
 
-<!-- Modal -->
+<!-- Modal para subir archivo nuevo-->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -158,6 +167,59 @@
     </div>
   </div>
 </div>
+
+
+
+
+
+
+<!-- Modal para crear nombre a la carpeta-->
+<div class="modal fade" id="example" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+
+
+        <form class="form-horizontal" method="POST" enctype="multipart/form-data" action="{{ url('/repositorio/guardararchivo') }}">
+        @csrf
+        <div class="line"></div>
+        <div class="form-group row">
+          <label class="col-sm-2 form-control-label">Nombre de la Carpeta:</label>
+          <div class="col-sm-10">
+            <!--<input type="text" class="form-control">-->
+            <textarea id="carpeta" name="carpeta" class="form-control" ></textarea>
+          </div>
+        </div>
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button  type="submit"  class="btn btn-primary">Guardar</button>
+      </div>
+
+    </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
