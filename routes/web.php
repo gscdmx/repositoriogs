@@ -39,12 +39,17 @@ Route::post('/guardarUsuario', 'UserController@save_usuario');
 
 
 //RUTAS REPOSITORIO
-Route::get('/repositorios/list', 'RepositorioController@vista_repositorios');
-Route::get('/repositorios/misarchivos', 'RepositorioController@mi_repositorio');
-Route::post('/repositorio/guardararchivo', 'RepositorioController@save_archivo');
+Route::get('/repositorios/list', 'RepositorioController@vista_repositorios');/////////////probado
+Route::get('/repositorios/misarchivos', 'RepositorioController@mi_repositorio');//////////probado
+Route::get('/repositorios/misarchivos2/{id}', 'RepositorioController@mi_repositorio2');
+Route::post('/repositorio/guardararchivo', 'RepositorioController@save_archivo');//////////////
 Route::get('/repositorios/repositoriousuarios/{id}', 'RepositorioController@repositorio_usuarios');
 
+//RUTAS CARPETAS USUARIO
+Route::get('/repositorios/carpetas', 'RepositorioController@vista_carpetas');
 
+Route::get('/repositorios/miscarpetas', 'RepositorioController@mi_carpeta');
+Route::post('/repositorio/guardarcarpeta', 'RepositorioController@save_carpeta');
 
 
 

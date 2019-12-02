@@ -10,6 +10,6 @@ class tbRepositorio extends Model
 
 
     protected $fillable = [
-        'nombre_archivo', 'estatus', 'id_user_subio','fecha','descripcion'
+        'nombre_archivo', 'estatus', 'id_user_subio','fecha','descripcion','id_carpeta'
     ];
 }

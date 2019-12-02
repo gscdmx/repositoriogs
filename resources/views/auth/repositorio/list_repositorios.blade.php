@@ -28,7 +28,7 @@ if (isset(\Auth::user()->permisos)) {
   <div class="col-lg-12">
   <div class="card">
     <div class="card-header d-flex align-items-center">
-      <h4>REPOSITORIOS CDMX</h4>
+      <h4>REPOSITORIO CDMX</h4>
     </div>
     <div class="card-body">
 
