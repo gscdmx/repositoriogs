@@ -39,8 +39,12 @@
             <div class="card-header">
               <h4>Listado de archivos</h4>
             </div>
-
-
+            <div class="card-header">
+              <h4>tema</h4>
+            </div>
+            <div class="card-header">
+              <h4>temas</h4>
+            </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-striped" id="archivoslist">
