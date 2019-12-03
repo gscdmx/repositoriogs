@@ -6,10 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class tbCarpetas extends Model
 {
-    //
-
-
-    protected $fillable = [
+     protected $fillable = [
         'id_usuario','nombre_carpeta'
     ];
 }
