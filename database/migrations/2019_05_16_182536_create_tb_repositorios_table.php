@@ -20,6 +20,7 @@ class CreateTbRepositoriosTable extends Migration
             $table->tinyInteger('estatus')->default(0);
             $table->integer('id_user_subio')->nullable();
             $table->date('fecha')->nullable();
+            $table->integer('id_carpeta')->nullable();
 
             $table->timestamps();
         });
