@@ -22,6 +22,8 @@ class CreateTbCarpetasTable extends Migration
         });
     }
 
+
+
     /**
      * Reverse the migrations.
      *
