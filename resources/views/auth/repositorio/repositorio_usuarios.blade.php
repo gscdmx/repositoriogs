@@ -52,50 +52,20 @@
                   <tbody>
 
 
-                     @foreach($misarchivos as $archivo)
-                    
-                    <tr>
-                      
+                    @foreach($misarchivos as $archivo)       
+                    <tr>   
                       <td>{{$archivo->descripcion}}</td>
-                      <td><a href="{{url('/archivos_repositorio').'/'.$archivo->nombre_archivo}}" class="btn btn-primary" download>Descargar</a></td>
-                      
-
+                      <td><a href="{{url('/archivos_repositorio').'/'.$archivo->nombre_archivo}}" class="btn btn-primary" download>Descargar</a></td>  
                     </tr>
-
-                    @endforeach
-                   
-
-
-                   
-                
-
-                   
+                    @endforeach                                    
+              
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
         </div>
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
+       </div>
     </div>
   </div>
 
@@ -110,19 +80,10 @@
 @endsection
 
 
-
-
-
 @section('js')  
 
 
-
- 
 @endsection
-
-
-
-
 
 @section('customjs')
 
@@ -136,9 +97,6 @@
 } );
 
 </script>
-
-
-
 
 @endsection
 
