@@ -28,7 +28,6 @@ class RepositorioController extends Controller
       public function mi_repositorio()
     {   
 
-
         return "prueba";
         //
        /* $misarchivos= \App\tbRepositorio::select('tb_repositorios.*')
@@ -39,9 +38,6 @@ class RepositorioController extends Controller
         $miscarpetas= \App\tbCarpetas::select('tb_carpetas.nombre_carpeta','tb_carpetas.id')
                     ->where('tb_carpetas.id_usuario',\Auth::user()->id)//trae nombre de la carpeta del usuario con el que esta en sesión 
                    ->get();
-
-
-
 
         return view('auth.repositorio.mi_repositorio',compact('misarchivos','miscarpetas'));*/
     }
@@ -135,9 +131,6 @@ class RepositorioController extends Controller
 
      public function vista_carpetas()
     {
-        //
-
-
          $carpusuarios= \App\User::select('users.id','users.name')
                        ->where('users.id','!=',\Auth::user()->id)
                        ->get();
@@ -147,28 +140,14 @@ class RepositorioController extends Controller
 
      public function mi_carpeta()
     {
-      
-      
+    
      // return json_encode($miscarpetas); DO
        return view('auth.repositorio.mi_repositorio',compact('miscarpetas'));
     }
 
-  
-//public function mi_carpeta(){
-   
-    
- // {   
-        
-            // $users = \App\user::All();
-             //$miscarpetas = \App\tbCarpetas::All();
-             //return view('auth.repositorio.mi_repositorio',compact('users','miscarpetas'));
-    //}
-    
-    
-//}
 
 
-       public function save_carpeta(Request $request)
+    public function save_carpeta(Request $request)
     {
         
 
@@ -188,7 +167,7 @@ class RepositorioController extends Controller
                  return Redirect::to('/repositorios/misarchivos')->with('mensaje', $mensaje);
          
 
-         }
+    }
 
            
 
@@ -202,78 +181,5 @@ class RepositorioController extends Controller
         return view('auth.repositorio.repositorio_usuarios',compact('misarchivos'));
     }
 
-  
 
-
-
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }
