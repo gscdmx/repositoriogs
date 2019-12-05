@@ -46,14 +46,14 @@ class RepositorioController extends Controller
  public function mi_repositorio2($id)
     {
        
-        $misarchivos= \App\tbRepositorio::select('tb_repositorios.*')
+        $misarchivosr= \App\tbRepositorio::select('tb_repositorios.*')
                      //->join('tb_repositorios.nombre_archivo','=','tb_carpetas.id_carpeta')
                      ->where('tb_repositorios.id_user_subio',\Auth::user()->id)
                      ->where('tb_repositorios.id_carpeta',$id)
                      ->get();
        $id_carpeta=$id;
        
-        return view('auth.repositorio.mi_archivoencarpeta',compact('misarchivos','id_carpeta'));
+        return view('auth.repositorio.mi_archivoencarpeta',compact('misarchivosr','id_carpeta'));
     }
 
 ///////////////////////////
