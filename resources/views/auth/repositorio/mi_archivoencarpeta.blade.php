@@ -39,12 +39,7 @@
             <div class="card-header">
               <h4>Listado de archivos</h4>
             </div>
-            <div class="card-header">
-              <h4>tema</h4>
-            </div>
-            <div class="card-header">
-              <h4>temas</h4>
-            </div>
+
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-striped" id="archivoslist">
@@ -60,15 +55,10 @@
 
 
                      @foreach($misarchivos as $archivo)
-                    
-                    <tr>
-                      
+                    <tr>             
                       <td>{{$archivo->descripcion}}</td>
-                      <td><a href="{{url('/archivos_repositorio').'/'.$archivo->nombre_archivo}}" class="btn btn-primary" download>Descargar</a></td>
-                      
-
+                      <td><a href="{{url('/archivos_repositorio').'/'.$archivo->nombre_archivo}}" class="btn btn-primary" download>Descargar</a></td>           
                     </tr>
-
                     @endforeach
      
                    
@@ -82,13 +72,7 @@
 
           </div>
         </div>
-
-
-
-
-
-     
-
+  </div>
   </div>
   </div>
   </section>
@@ -127,7 +111,8 @@
           <div class="col-sm-10">
         <input type="file" id="archivo" name="archivo"  accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf">
         <!--este es el mensaje de validacion-->
-            @if ($errors->has('archivo')) <p  style="color: red">{{ $errors->first('archivo') }}</p> @endif
+            @if ($errors->has('archivo')) <p  style="color: red">{{ $errors->first('archivo') }}</p>
+            @endif
 
           </div>
         </div>
