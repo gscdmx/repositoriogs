@@ -61,8 +61,7 @@ if (isset(\Auth::user()->permisos)) {
 
 
 
-    <hr>
-
+   
 
 
 <?php if(in_array(3, $array_permisos)):?>
