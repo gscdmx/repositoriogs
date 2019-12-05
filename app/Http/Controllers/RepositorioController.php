@@ -28,9 +28,9 @@ class RepositorioController extends Controller
       public function mi_repositorio()
     {   
 
-        return "prueba";
+        //return "prueba";
         //
-       /* $misarchivos= \App\tbRepositorio::select('tb_repositorios.*')
+        $misarchivos= \App\tbRepositorio::select('tb_repositorios.*')
                      ->where('tb_repositorios.id_user_subio',\Auth::user()->id)
                      ->get();
 
@@ -39,7 +39,7 @@ class RepositorioController extends Controller
                     ->where('tb_carpetas.id_usuario',\Auth::user()->id)//trae nombre de la carpeta del usuario con el que esta en sesión 
                    ->get();
 
-        return view('auth.repositorio.mi_repositorio',compact('misarchivos','miscarpetas'));*/
+        return view('auth.repositorio.mi_repositorio',compact('misarchivos','miscarpetas'));
     }
 
 
