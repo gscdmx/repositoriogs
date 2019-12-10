@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>cdmx</title>
+    <title>Repositorio CGGSCYPJ-CDMX</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -36,7 +36,7 @@
           <div class="form-inner">
             <div class="logo text-uppercase">
                
-                <img src="{{url('recursos/img/Logo-cdmx_2019.png')}}" height="9%" width="60%">
+                <img src="{{url('recursos/img/logooficial.jpg')}}" height="7%" width="50%">
                 <span></span><p><strong  class="text-primary" >REPOSITORIO</strong></p>
                  <p><strong  align="center"  class="text-secundary"  style="color:#000000"; >CGGSCYPJ</strong></p>
                  
