@@ -142,7 +142,7 @@ if (isset(\Auth::user()->permisos)) {
               <center><p>Plaza de la Constitución No. 2 &bull; Colonia Centro &bull; Delegación Cuauhtémoc &bull; C.P.   06068 &bull; México, CDMX  &bull; Conmutador: (55) 53458026</p></center>
             </div>
             <div class="col-sm-15 text-right">
-              <p><a href="https://bootstrapious.com" class="external">CDMX</a></p>
+              <p><a href="https://www.gabinetedeseguridad.cdmx.gob.mx/" class="external">CDMX</a></p>
         </div>
       </footer>
     </div>
