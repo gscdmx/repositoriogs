@@ -57,7 +57,14 @@ class RepositorioController extends Controller
     }
 
 ///////////////////////////
-   
+
+
+   public function compartidos(){
+
+    
+      return view('auth.repositorio.mis_compartidos');
+
+   }
 
 
 /////////////////////////////
