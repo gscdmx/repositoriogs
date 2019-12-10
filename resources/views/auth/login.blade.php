@@ -38,7 +38,7 @@
                
                 <img src="{{url('recursos/img/Logo-cdmx_2019.png')}}" height="9%" width="60%">
                 <span></span><p><strong  class="text-primary" >REPOSITORIO</strong></p>
-                 <p><strong  align="center"  class="text-secundary"  style="color:#000000"; >CGSCYPJ</strong></p>
+                 <p><strong  align="center"  class="text-secundary"  style="color:#000000"; >CGGSCYPJ</strong></p>
                  
                 <!-- <span></span><strong class="text-primary">REPOSITORIO</strong>
                  <strong class="text-secundary">GSCYPJ</strong>-->
@@ -75,7 +75,7 @@
             </form><!--<a href="#" class="forgot-pass">olvide mi contraseña</a><small>Crear cuenta </small><a href="register.html" class="signup">Signup</a>-->
           </div>
           <div class="copyrights text-center">
-            <p>  <a href="https://www.gabinetedeseguridad.cdmx.gob.mx/" class="external">GSCYPJ CDMX</a></p>
+            <p>  <a href="https://www.gabinetedeseguridad.cdmx.gob.mx/" class="external">Gabinete de Seguridad Ciudadana CDMX</a></p>
             <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
           </div>
         </div>
