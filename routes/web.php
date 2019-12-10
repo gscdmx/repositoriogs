@@ -44,6 +44,7 @@ Route::get('/repositorios/misarchivos', 'RepositorioController@mi_repositorio');
 Route::get('/repositorios/misarchivos2/{id}', 'RepositorioController@mi_repositorio2');
 Route::post('/repositorio/guardararchivo', 'RepositorioController@save_archivo');//////////////
 Route::get('/repositorios/repositoriousuarios/{id}', 'RepositorioController@repositorio_usuarios');
+Route::get('/repositorios/compartidos', 'RepositorioController@compartidos');
 
 //RUTAS CARPETAS USUARIO
 Route::get('/repositorios/carpetas', 'RepositorioController@vista_carpetas');

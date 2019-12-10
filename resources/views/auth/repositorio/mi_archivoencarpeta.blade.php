@@ -57,7 +57,13 @@
                      @foreach($misarchivos as $archivo)
                     <tr>             
                       <td>{{$archivo->descripcion}}</td>
-                      <td><a href="{{url('/archivos_repositorio').'/'.$archivo->nombre_archivo}}" class="btn btn-primary" download>Descargar</a></td>           
+                      <td>
+                        <a href="{{url('/archivos_repositorio').'/'.$archivo->nombre_archivo}}" class="btn btn-primary" download>Descargar</a>
+                        <!--esto iria en un if dependeindo el permiso-->
+                        <!--<a href="" class="btn btn-primary" data-toggle="modal" data-target="#modal_compartirr">Compartir</a>-->
+                        <!---->
+                      </td> 
+
                     </tr>
                     @endforeach
      
@@ -77,6 +83,57 @@
   </div>
   </section>
 
+
+
+
+<!-- Modal para subir archivo nuevo-->
+<div class="modal fade" id="modal_compartirr" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Compartir</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+        <form class="form-horizontal" method="POST" enctype="multipart/form-data" action="">
+        @csrf
+
+        <input type="hidden" name="IDcapeta" id="IDcapeta" value="{{$id_carpeta}}">
+        <div class="line"></div>
+        <div class="form-group row">
+          <label class="col-sm-2 form-control-label">Compartir a:</label>
+          <div class="col-sm-10">
+            <!--<input type="text" class="form-control">-->
+           <select  class="form-control" id="compartir_a" name="compartir_a">
+
+            <option>juanito</option>
+             <option>maria</option>
+              <option>jose</option>
+
+             
+           </select>
+          </div>
+        </div>
+
+
+
+      
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button  type="submit"  class="btn btn-primary">Guardar</button>
+      </div>
+
+    </form>
+    </div>
+  </div>
+</div>
 
 
 <!-- Modal para subir archivo nuevo-->

@@ -61,6 +61,8 @@ if (isset(\Auth::user()->permisos)) {
           <ul id="side-main-menu" class="side-menu list-unstyled">                  
             <li><a href="{{url('/home')}}"> <i class="icon-padnote"></i>°INICIO</a></li>
             <li><a href="{{url('/repositorios/list')}}"> <i class="icon-list"></i>Repositorio</a></li>
+
+            <!-- <li><a href="{{url('/repositorios/compartidos')}}"> <i class="icon-list"></i>Archivos Compartidos</a></li>-->
                         
           
            
@@ -75,7 +77,7 @@ if (isset(\Auth::user()->permisos)) {
              
              
            
-            
+          
          
              
           
@@ -93,7 +95,7 @@ if (isset(\Auth::user()->permisos)) {
           <div class="container-fluid">
             <div class="navbar-holder d-flex align-items-center justify-content-between">
               <div class="navbar-header"><a id="toggle-btn" href="#" class="menu-btn"><i class="icon-bars"> </i></a><a href="index.html" class="navbar-brand">
-                  <div class="brand-text d-none d-md-inline-block"><span>CGSCPJ </span><strong class="text-primary">CDMX</strong></div></a></div>
+                  <div class="brand-text d-none d-md-inline-block"><span>Gabinete de Seguridad Ciudadana</span><strong class="text-primary">CDMX</strong></div></a></div>
               <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
                 
                 
