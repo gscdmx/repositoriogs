@@ -63,9 +63,8 @@ if (isset(\Auth::user()->permisos)) {
             <li><a href="{{url('/repositorios/list')}}"> <i class="icon-list"></i>Repositorio</a></li>
 
              <!--<li><a href="{{url('/repositorios/compartidos')}}"> <i class="icon-list"></i>Archivos Compartidos</a></li>-->
-                        
-          
-           
+                       
+                     
              <?php if(in_array(1, $array_permisos)):?>
              <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-user"></i>Usuarios </a>
               <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
@@ -74,8 +73,7 @@ if (isset(\Auth::user()->permisos)) {
               </ul>
             </li>
              <?php endif?>
-             
-             
+                          
              <!--<?php if(in_array(4, $array_permisos)):?>
              
                 <li><a href="{{url('/')}}">Compartir Archivos</a></li>-->
@@ -89,8 +87,7 @@ if (isset(\Auth::user()->permisos)) {
              
             <!-- <?php endif?>-->
           
-         
-                     
+                            
        
       
           </ul>
