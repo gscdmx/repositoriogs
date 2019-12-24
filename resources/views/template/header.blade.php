@@ -62,7 +62,7 @@ if (isset(\Auth::user()->permisos)) {
             <li><a href="{{url('/home')}}"> <i class="icon-padnote"></i>°INICIO</a></li>
             <li><a href="{{url('/repositorios/list')}}"> <i class="icon-list"></i>Repositorio</a></li>
 
-            <!-- <li><a href="{{url('/repositorios/compartidos')}}"> <i class="icon-list"></i>Archivos Compartidos</a></li>-->
+             <li><a href="{{url('/repositorios/compartidos')}}"> <i class="icon-list"></i>Archivos Compartidos</a></li>
                         
           
            
@@ -76,7 +76,18 @@ if (isset(\Auth::user()->permisos)) {
              <?php endif?>
              
              
-           
+             <?php if(in_array(4, $array_permisos)):?>
+             
+                <li><a href="{{url('/')}}">Compartir Archivos</a></li>
+             
+             <?php endif?>
+
+
+              <?php if(in_array(5, $array_permisos)):?>
+             
+                <li><a href="{{url('/')}}">MÓdulo Compartidos</a></li>
+             
+             <?php endif?>
           
          
              
@@ -166,6 +177,8 @@ if (isset(\Auth::user()->permisos)) {
     <script src="{{url('/recursos')}}/js/front.js"></script>
 
     <script src="{{url('/recursos')}}/js/charts-custom.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css">
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
 
 
      @yield('customjs')
