@@ -68,7 +68,7 @@
 
 
 <!-- Modal para compartir archivo nuevo-->
-<div class="modal fade" id="modal_compartirr" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!--<div class="modal fade" id="modal_compartirr" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                       <div class="modal-header">
@@ -78,16 +78,16 @@
                                                     </button>
                                                           </div>
 
-           <div class="modal-body">
+           <!--<div class="modal-body">
                     <form class="form-horizontal" method="POST" enctype="multipart/form-data" action="">
                            @csrf
                            <input type="hidden" name="IDcapeta" id="IDcapeta" value="{{$id_carpeta}}">
                            
                            <div class="line"></div>
                            <div class="form-group row">
-                           <label class="col-sm-2 form-control-label">Compartir a:</label>
+                          <!-- <label class="col-sm-2 form-control-label">Compartir a:</label>-->
           
-                                  <div class="col-sm-8">
+                                  <!--<div class="col-sm-8">
                                   <select  class="form-control" id="compartir_a" name="compartir_a">
 
                                          <option value="">Selecciona...</option>
@@ -232,7 +232,7 @@
                                       </select>
                                     </div>
                                   </div>
-                               </div>
+                               </div>-->
                              <div class="modal-footer">
                            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cerrar</button>
                         <button  type="submit"  class="btn-save btn btn-primary btn-sm">Guardar</button>
@@ -240,7 +240,7 @@
                 </form>
            </div>
       </div>
-</div>
+</div>-->
 
 
 
