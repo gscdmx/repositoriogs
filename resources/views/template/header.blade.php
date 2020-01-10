@@ -62,7 +62,7 @@ if (isset(\Auth::user()->permisos)) {
             <li><a href="{{url('/home')}}"> <i class="icon-padnote"></i>°INICIO</a></li>
             <li><a href="{{url('/repositorios/list')}}"> <i class="icon-list"></i>Repositorio</a></li>
 
-             <!--<li><a href="{{url('/repositorios/compartidos')}}"> <i class="icon-list"></i>Archivos Compartidos</a></li>-->
+             <li><a href="{{url('/repositorios/compartidos')}}"> <i class="icon-list"></i>Bandeja de Entrada</a></li>
                        
                      
              <?php if(in_array(1, $array_permisos)):?>

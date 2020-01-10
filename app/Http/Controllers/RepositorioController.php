@@ -43,7 +43,7 @@ class RepositorioController extends Controller
     }
 
 
- public function mi_repositorio2($id)
+ public function mi_repositorio2($id) 
     {
        
         $misarchivos= \App\tbRepositorio::select('tb_repositorios.*')
@@ -52,17 +52,34 @@ class RepositorioController extends Controller
                      ->where('tb_repositorios.id_carpeta',$id)
                      ->get();
        $id_carpeta=$id;
-       
-        return view('auth.repositorio.mi_archivoencarpeta',compact('misarchivos','id_carpeta'));
+
+     
+
+       $user=\App\User::select('name','id')->get();
+      
+        return view('auth.repositorio.mi_archivoencarpeta',compact('misarchivos','id_carpeta','user'));
     }
 
 ///////////////////////////
 
 
+
+
    public function compartidos(){
 
+
+
+    $misarchivos= \App\tbRepositorio::select('tb_repositorios.*')
+                  ->join('tb_compartidos','tb_compartidos.id_archivo','=','tb_repositorios.id')
+                 ->where('tb_compartidos.id_user_compartio',\Auth::user()->id)
+                 ->get();
+
+
+   // dd($misarchivos);
+     
+
     
-      return view('auth.repositorio.mis_compartidos');
+      return view('auth.repositorio.mis_compartidos',compact('misarchivos'));
 
    }
 
@@ -187,6 +204,58 @@ class RepositorioController extends Controller
                      ->get();
         return view('auth.repositorio.repositorio_usuarios',compact('misarchivos'));
     }
+
+
+
+
+    
+
+     public function save_shared_file(Request $request)
+    {
+
+          
+     $usuarios= $request['compartir_a'];
+
+
+
+     foreach ($usuarios as $id) {
+      
+        $inserto = \App\tbCompartido::create([ 
+                     
+                       'id_archivo' =>  $request['id_file'],
+                       'id_user_compartio'=> $id,                  
+                       'id_user_subio'=> \Auth::user()->id,
+                    ]); 
+
+
+
+
+     }
+
+     return 1;
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

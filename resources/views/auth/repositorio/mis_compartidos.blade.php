@@ -15,8 +15,7 @@
 
      <div class="card">
       <div class="card-header d-flex align-items-center">
-      <h4>ARCHIVOS COMPARTIDOS </h4>
-    </div>
+      <h4>BANDEJA DE ENTRADA </h4> 
 
     <div class="card-body">
 
@@ -33,6 +32,42 @@
 
 
    <!--CONTENIDO-->
+
+                     <div class="col-lg-12">
+                         <div class="card">
+                              <div class="card-header">
+                                  <h4>Listado de archivos compartidos:</h4>
+                              </div>
+                                    <div class="card-body">
+                                                 <div class="table-responsive">
+                                                        <table class="table table-striped" id="archivoslist">
+                                                        <thead>
+                                                        <tr>
+                                                                   <th>Descripción</th>
+                                                                   <th>Opciones</th>                    
+                                                                  </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                       @foreach($misarchivos as $archivo)
+                                                                <tr>             
+                                                                   <td>{{$archivo->descripcion}}</td>
+                                                                   <td>
+                                                                     <a href="{{url('/archivos_repositorio').'/'.$archivo->nombre_archivo}}" class="btn btn-primary" download>Descargar</a>
+                                                                   
+                                                                  </td> 
+                                                                </tr>
+                                                                @endforeach                  
+                                                               </tbody>
+                                                             </table>
+                                                 </div>
+                                     </div>
+                          </div>
+                   </div>
+
+
+
+
+
 
 
 
