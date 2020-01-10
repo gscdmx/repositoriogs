@@ -53,6 +53,9 @@ Route::get('/repositorios/miscarpetas', 'RepositorioController@mi_carpeta');
 Route::post('/repositorio/guardarcarpeta', 'RepositorioController@save_carpeta');
 
 
+//compartir
+Route::post('/repositorio/shared_file', 'RepositorioController@save_shared_file');
+
 
 
 

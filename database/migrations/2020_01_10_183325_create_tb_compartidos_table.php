@@ -15,10 +15,11 @@ class CreateTbCompartidosTable extends Migration
     {
         Schema::create('tb_compartidos', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('nombre_archivo')->nullable();
-            $table->tinyInteger('estatus')->default(0);
+            $table->integer('id_archivo')->nullable();
+            $table->integer('id_user_compartio')->nullable();
+            //no necesarios
             $table->integer('id_user_subio')->nullable();
-            $table->integer('user_compartio')->nullable();    
+            $table->tinyInteger('estatus')->default(0); 
             $table->timestamps();
         });
     }
