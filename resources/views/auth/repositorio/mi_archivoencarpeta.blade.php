@@ -51,7 +51,7 @@
                                                                 <tr>             
                                                                    <td>{{$archivo->descripcion}}</td>
                                                                    <td>
-                                                                     <a href="{{url('/archivos_repositorio').'/'.$archivo->nombre_archivo}}" class="btn btn-primary" download>Descargar</a>
+                                                                     <a href="{{url('/archivos_repositorio').'/'.$archivo->nombre_archivo}}" class="btn btn-primary" role="button">Descargar</a>
                                                                     <!--esto iria en un if dependiendo el permiso-->
                                                                      <a href="{{url('/repositorios/compartidos').'/'.$archivo->nombre_archivo}}" class="btn btn-primary getIDcompartir" data-id="{{$archivo->id}}" data-toggle="modal" data-target="#modal_compartirr">Compartir</a>
                                                                     <!---->

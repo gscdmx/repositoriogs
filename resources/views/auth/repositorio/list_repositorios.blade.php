@@ -28,7 +28,7 @@ if (isset(\Auth::user()->permisos)) {
   <div class="col-lg-12">
   <div class="card">
     <div class="card-header d-flex align-items-center">
-      <h4>REPOSITORIO CDMX</h4>
+      <h4>REPOSITORIO CGGSCYPJ CDMX</h4>
     </div>
     <div class="card-body">
 
@@ -46,7 +46,7 @@ if (isset(\Auth::user()->permisos)) {
                 <div class="mr-5">MI REPOSITORIO </div>
               </div>
               <a class="card-footer clearfix small z-1" href="{{url('/repositorios/misarchivos')}}">
-                <span class="float-left">Ver repositorio</span>
+                <span class="float-left">Ver Repositorio</span>
                 <span class="float-right">
                   <i class="fa fa-chevron-right"></i>
                 </span>
@@ -79,7 +79,7 @@ if (isset(\Auth::user()->permisos)) {
                 <div class="mr-5">{{$usuario->name}} </div>
               </div>
               <a class="card-footer clearfix small z-1" href="{{url('/repositorios/repositoriousuarios').'/'.$usuario->id}}">
-                <span class="float-left">Ver repositorio</span>
+                <span class="float-left">Ver Repositorio</span>
                 <span class="float-right">
                   <i class="fa fa-chevron-right"></i>
                 </span>
