@@ -21,7 +21,7 @@
   <div class="col-lg-12">
   <div class="card">
     <div class="card-header d-flex align-items-center">
-      <h4>Archivos </h4>
+      <h4>Archivos CGGSCYPJ</h4>
     </div>
     <div class="card-body">
 
@@ -37,7 +37,7 @@
         <div class="col-lg-12">
           <div class="card">
             <div class="card-header">
-              <h4>Listado de archivos</h4>
+              <h4>Listado de Archivos</h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
