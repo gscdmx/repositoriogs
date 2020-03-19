@@ -18,7 +18,7 @@
                       <div class="col-lg-12">
                             <div class="card">
                                    <div class="card-header d-flex align-items-center">
-                                          <h4>Mis archivos </h4>
+                                          <h4>Mis Archivos </h4>
                                    </div>
                                   <div class="card-body">
                                                  @if( Session::has('mensaje') )
