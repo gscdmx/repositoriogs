@@ -55,7 +55,7 @@
                     @foreach($misarchivos as $archivo)       
                     <tr>   
                       <td>{{$archivo->descripcion}}</td>
-                      <td><a href="{{url('/archivos_repositorio').'/'.$archivo->nombre_archivo}}" class="btn btn-primary" download>Descargar</a></td>  
+                      <td><a href="{{url('/archivos_repositorio').'/'.$archivo->nombre_archivo}}" class="btn btn-primary" role="button">Descargar</a></td>  
                     </tr>
                     @endforeach                                    
               

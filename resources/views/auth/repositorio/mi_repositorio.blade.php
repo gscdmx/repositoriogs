@@ -51,7 +51,7 @@
                    <div class="mr-5">{{$carpeta->nombre_carpeta}}  </div>
                  </div>
                  <a class="card-footer clearfix small z-1" href="{{url('/repositorios/misarchivos2').'/'.$carpeta->id}}">
-                   <span class="float-left">Ver archivos</span>
+                   <span class="float-left">Ver Archivos</span>
                    <span class="float-right">
                      <i class="fa fa-chevron-right"></i>
                    </span>
@@ -87,7 +87,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Crear carpeta</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Crear Carpeta</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

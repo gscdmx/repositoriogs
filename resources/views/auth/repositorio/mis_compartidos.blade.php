@@ -36,7 +36,7 @@
                      <div class="col-lg-12">
                          <div class="card">
                               <div class="card-header">
-                                  <h4>Listado de archivos compartidos:</h4>
+                                  <h4>Listado de Archivos Compartidos:</h4>
                               </div>
                                     <div class="card-body">
                                                  <div class="table-responsive">
@@ -52,7 +52,7 @@
                                                                 <tr>             
                                                                    <td>{{$archivo->descripcion}}</td>
                                                                    <td>
-                                                                     <a href="{{url('/archivos_repositorio').'/'.$archivo->nombre_archivo}}" class="btn btn-primary" download>Descargar</a>
+                                                                     <a href="{{url('/archivos_repositorio').'/'.$archivo->nombre_archivo}}" class="btn btn-primary" role="button">Descargar</a>
                                                                    
                                                                   </td> 
                                                                 </tr>

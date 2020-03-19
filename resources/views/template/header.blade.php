@@ -87,9 +87,8 @@ if (isset(\Auth::user()->permisos)) {
              
             <!-- <?php endif?>-->
           
-                            
-       
-      
+                           
+             
           </ul>
         </div>
         
@@ -104,7 +103,7 @@ if (isset(\Auth::user()->permisos)) {
               <div class="navbar-header"><a id="toggle-btn" href="#" class="menu-btn"><i class="icon-bars"> </i></a><a href="index.html" class="navbar-brand">
                   <div class="brand-text d-none d-md-inline-block"><span>CGGSCYPJ</span><strong class="text-primary">CDMX</strong></div></a></div>
               <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
-                
+              
                 
                 <!-- Log out-->
                 <li class="nav-item"><a href="{{ route('logout') }}"  onclick="event.preventDefault();
@@ -136,10 +135,6 @@ if (isset(\Auth::user()->permisos)) {
     <font id="font_footer"><strong>Jefatura de Gobierno Coordinación General del Gabinete de Seguridad Ciudadana y Procuración de Justicia   <?php echo date('Y');?> <br />
       Plaza de la Constitución No. 2 &bull; Colonia Centro &bull; Delegación Cuauhtémoc &bull; C.P.   06068 &bull; México, CDMX  &bull; Conmutador: (55) 53458026</strong></font>
   </center>-->
-
-
-
-
 
        <footer class="main-footer">
         <div class="container-fluid">
