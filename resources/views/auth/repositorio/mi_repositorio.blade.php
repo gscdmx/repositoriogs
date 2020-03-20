@@ -38,7 +38,7 @@
 
 
 
-    <div class="row">
+  
 
     @foreach($miscarpetas as $carpeta)
                        
@@ -58,7 +58,7 @@
                    
                  </div>
                  
-               </div>
+           
           
         
 
