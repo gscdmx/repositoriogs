@@ -63,6 +63,7 @@ if (isset(\Auth::user()->permisos)) {
             <li><a href="{{url('/repositorios/list')}}"> <i class="icon-list"></i>Repositorio</a></li>
 
              <li><a href="{{url('/repositorios/compartidos')}}"> <i class="icon-list"></i>Bandeja de Entrada</a></li>
+             <li><a href="{{url('/repositorios/manual')}}"> <i class="icon-list"></i>Consultar Manual</a></li>
                        
                      
              <?php if(in_array(1, $array_permisos)):?>

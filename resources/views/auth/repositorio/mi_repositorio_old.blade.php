@@ -43,23 +43,21 @@
     @foreach($miscarpetas as $carpeta)
                        
              <div class="col-xl-3 col-sm-6 mb-3">
-               
+               <div class="card text-white bg-primary o-hidden h-30" style="width: 15rem;">
                  <div class="card-body">
-
-                  <a class="card-footer clearfix small z-1" href="{{url('/repositorios/misarchivos2').'/'.$carpeta->id}}">
-                    <div class="mr-5">{{$carpeta->nombre_carpeta}}<img class="card-img-top o-hidden h-30" style="width: 10rem height: 5rem;" src="{{url('recursos/img/carpeta.png')}}"  alt="Card image cap"> </div>
+                   <div class="card-body-icon">
+                     <i class="fa fa-user"></i>
+                   </div>
+                   <div class="mr-5">{{$carpeta->nombre_carpeta}}</div>
+                 </div>
+                 <a class="card-footer clearfix small z-1" href="{{url('/repositorios/misarchivos2').'/'.$carpeta->id}}">
                    <span class="float-left">Ver Archivos</span>
                    <span class="float-right">
                      <i class="fa fa-chevron-right"></i>
                    </span>
                  </a>
-                   
-                   </div>
-                   
-                 </div>
-                 
                </div>
-          
+             </div>
         
 
 

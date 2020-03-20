@@ -241,6 +241,15 @@ class RepositorioController extends Controller
 
 
 
+ public function manual(){
+
+
+
+
+    
+      return view('auth.repositorio.manual');
+
+   }
 
 
 

@@ -3,9 +3,7 @@
 @section('content')
 
 <?php 
-
 $array_permisos = array("0");
-
 if (isset(\Auth::user()->permisos)) {
  if(\Auth::user()->permisos!='N;'){
      $array_permisos =  unserialize(\Auth::user()->permisos);
@@ -13,6 +11,8 @@ if (isset(\Auth::user()->permisos)) {
    
 }
 ?>
+
+
 
 
   <section class="forms">
@@ -35,26 +35,31 @@ if (isset(\Auth::user()->permisos)) {
 
       <div class="row">
       
-       <div class="col-xl-3 col-sm-3 mb-3">
-      
-              <div class="card-body" >
-               
-                <a class="card-footer clearfix small z-1" href="{{url('/repositorios/misarchivos')}}" >
-                <div class="mr-5"><img class="card-img-top o-hidden h-30" style="width: 5rem height: 5rem;" src="{{url('recursos/img/carpeta.png')}}"  alt="Card image cap">Mi repositorio</div>
-
-                <span class="float-left o-hidden h-30" style="color: #000000a1"></span>
-                <span class="float-right" >  
-                  <i class="fa fa-chevron-right"></i>                
+       <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-primary o-hidden h-30">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="mr-5">MI REPOSITORIO </div>
+              </div>
+              <a class="card-footer clearfix small z-1" href="{{url('/repositorios/misarchivos')}}">
+                <span class="float-left">Ver Repositorio</span>
+                <span class="float-right">
+                  <i class="fa fa-chevron-right"></i>
                 </span>
-                </a>
-              </div>     
+              </a>
             </div>
-      </div>
+          </div>
+
+    </div>
            
 
  <?php endif?>
 
- 
+
+
+   
 
 
 <?php if(in_array(3, $array_permisos)):?>
@@ -64,9 +69,15 @@ if (isset(\Auth::user()->permisos)) {
  @foreach($listusuarios as $usuario)
                     
           <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-primary o-hidden h-100">
               <div class="card-body">
-              <a class="card-footer clearfix small z-1" href="{{url('/repositorios/repositoriousuarios').'/'.$usuario->id}}" >
-                <div class="mr-5"><i class="fa fa-user"></i> {{$usuario->name}}<img class="card-img-top o-hidden h-30" style="width: 10rem height: 5rem;" src="{{url('recursos/img/carpeta.png')}}"  alt="Card image cap"> </div>
+                <div class="card-body-icon">
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="mr-5">{{$usuario->name}} </div>
+              </div>
+              <a class="card-footer clearfix small z-1" href="{{url('/repositorios/repositoriousuarios').'/'.$usuario->id}}">
+                <span class="float-left">Ver Repositorio</span>
                 <span class="float-right">
                   <i class="fa fa-chevron-right"></i>
                 </span>
@@ -81,6 +92,7 @@ if (isset(\Auth::user()->permisos)) {
   </div>
         
   <?php endif?>           
+
 
 
 
@@ -124,9 +136,6 @@ if (isset(\Auth::user()->permisos)) {
 
 
 @endsection
-
-
-
 
 
 
